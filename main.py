@@ -18,7 +18,9 @@ def input_page():
     num = request.form['friends']
     user_lst = user.main(user_id)
     friends_lst = twitter2.main(user_id, num)
-    map_html = map_create.main(user_lst, friends_lst, num)
+    map_create.main(user_lst, friends_lst, num)
+    app.jinja_env.auto_reload = True
+    app.config['TEMPLATES_AUTO_RELOAD'] = True
     return render_template('map_html.html')
 
 
