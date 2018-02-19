@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Users Map</title>
+    <link rel="icon" href="../static/twitter-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../static/bootstrap.css">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="row" id="left">
+        <div class="col-5" id="left_info">
+            <p><img src="../static/user.png" alt="" height="40px">Type user ID</p>
+            <p><img src="../static/business-deal.png" alt="" height="40px">Type number of friends</p>
+            <p><img src="../static/placeholder.png" alt="" height="40px">Enjoy our map</p>
+        </div>
+    </div>
+    <div class="row" id="right">
+        <div class="col-5" id="right_info">
+            <img src="../static/twitter-logo.png" alt="" height="50px" style="margin-bottom: 10px;">
+            <p class="name" style="margin-bottom: 30px">We visualize people's Twitter</p>
+            <form action="{{ url_for('input_page')}}" method="post">
+                <div class="form-group">
+                    <label>Enter user ID</label>
+                    <input type="text" class="form-control" placeholder="user ID" name="user_id">
+                </div>
+                <div class="form-group">
+                    <label>Enter number of friends</label>
+                    <input type="number" class="form-control" placeholder="number of friends" name="friends">
+                </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
