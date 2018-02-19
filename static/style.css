@@ -1,0 +1,64 @@
+@font-face {
+    font-family: Raleway;
+    src: url("https://fonts.googleapis.com/css?family=Raleway");
+}
+
+@font-face {
+    font-family: Lato;
+    url('https://fonts.googleapis.com/css?family=Lato');
+}
+
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin: 0;
+}
+
+#left {
+    background-image: url("../static/twitter1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+#right {
+    background-color: #FFF;
+}
+
+#left_info {
+    min-width: 280px;
+    margin: auto;
+    display: block;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 18px;
+    line-height: 50px;
+    font-family: Raleway, sans-serif;
+    color: #FFF;
+}
+
+#left_info img {
+    margin-right: 15px;
+}
+
+#right_info {
+    margin: auto;
+    display: block;
+    vertical-align: middle;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+}
+
+.name {
+    font-size: 30px;
+}
